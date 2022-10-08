@@ -11,11 +11,11 @@ Console.Clear();
 Console.WriteLine("введите число: ");
 
 int num = int.Parse(Console.ReadLine()!);
-int sum = 0;
-
+int result = SumDigit(num);
+Console.WriteLine(result);
 SumDigit(num);
 int SumDigit(int number)
-{
+{int sum = 0;
     for (int i = 1; num > 0; i++)
     {
         int div = num % 10;
@@ -24,4 +24,3 @@ int SumDigit(int number)
     }
     return sum;
 }
-Console.WriteLine(sum);
